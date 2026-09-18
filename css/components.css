@@ -118,6 +118,34 @@
   background: var(--accent);
 }
 
+/* ---------- Ürün sayfası başlığı ---------- */
+.page-meta {
+  color: var(--ink-2);
+  font-size: var(--step--1);
+  max-width: none;
+}
+.page-meta span + span::before {
+  content: "·";
+  margin-inline: var(--s3);
+  color: var(--line);
+}
+
+/* ---------- Ekran görüntüsü sırası ----------
+   Telefonda yana kaydırılır, geniş ekranda yan yana durur. */
+.shots {
+  display: flex;
+  gap: var(--s5);
+  overflow-x: auto;
+  padding-bottom: var(--s3);
+}
+.shots img {
+  flex: 0 0 auto;
+  width: 240px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.shots figure { margin: 0; }
+
 /* ---------- Madde listeleri ---------- */
 .feature h3 { margin-bottom: var(--s2); }
 .feature p { color: var(--ink-2); font-size: var(--step--1); }
