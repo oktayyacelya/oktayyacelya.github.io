@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>One team, two apps — Yelkovan</title>
+<meta name="description" content="What Flutter and Firebase made easier — and harder — while running two very different products with the same small team.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/assets/brand/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/brand/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+</head>
+<body>
+
+<a class="skip-link" href="#icerik">Skip to content</a>
+
+<!-- nav:start v1 -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/en/">
+      <img src="/assets/brand/logo.svg" alt="" width="30" height="30">
+      <span>Yelkovan</span>
+    </a>
+    <nav class="nav" aria-label="Main menu">
+      <a href="/en/faby/">Faby</a>
+      <a href="/en/sorula/">Sorula</a>
+      <a href="/en/about/">About</a>
+      <a href="/en/contact/">Contact</a>
+      <a class="nav__lang" href="/blog/tek-ekip-iki-uygulama/" hreflang="tr" lang="tr">TR</a>
+    </nav>
+  </div>
+</header>
+<!-- nav:end -->
+
+<main id="icerik">
+
+  <article>
+    <section id="hero" class="hero">
+      <div class="container stack--lg stack">
+        <h1>One team, two apps</h1>
+        <p class="page-meta">
+          <span><time datetime="2026-09-19">19 September 2026</time></span><span>Yelkovan</span><span>5 min</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="govde" class="section">
+      <div class="container stack--lg stack">
+        <p>We have two products and they have nothing in common. Faby reads a bedtime story to a four-year-old; Sorula analyses a seventeen-year-old's mock exam. They nonetheless sit on the same technical base: Flutter and Firebase. Not because those are "the best" tools, but because a small team running two products at once needs a single mental model.</p>
+
+        <h2>What one codebase buys you</h2>
+        <p>The real benefit of Flutter in practice is not "write once, run anywhere". It is this: when you fix a bug you have fixed it on both platforms, and you never have to work out why the two platforms behave differently. In a small team, time goes into "why does it do that here" far more than into writing new features. Not doubling that question is a serious win.</p>
+
+        <h2>Where you pay for it</h2>
+        <p>You start paying the moment you need something platform-specific. A parent recording their own voice in Faby, reading a question through the camera in Sorula — both drop into the native layer, and there Flutter does not help you, it just gets out of the way. That work takes longer than you expect. It belongs in its own line when you plan.</p>
+
+        <h2>What we learned about AI</h2>
+        <p>We do not train the models in either product; we use existing ones. The hard part is not picking a model, it is deciding when <em>not</em> to use one. When a student points a camera at a maths question in Sorula, a correct answer is not enough — the solution has to be broken into steps the student can follow. In Faby, a beautiful story is not enough — it has to fit the age group, and the same character has to look the same on every page.</p>
+        <p>None of those constraints is solved by model quality. They are solved on the product side, by designing what to ask, how to present the result, and what never to show at all.</p>
+
+        <h2>In short</h2>
+        <p>For a small team the right question is not "which technology is best" but "which technology surprises me in the fewest places". Keeping both products on one base means everything we learn applies to both. The price is moving slowly on platform-specific work. For now that trade still makes sense to us.</p>
+      </div>
+    </section>
+
+    <section id="alt" class="section section--tint">
+      <div class="container stack">
+        <p><a href="/en/blog/">&larr; All posts</a></p>
+      </div>
+    </section>
+  </article>
+
+</main>
+
+<!-- footer:start v1 -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <p>&copy; 2026 Yelkovan</p>
+      <p><a href="/en/privacy/">Privacy</a></p>
+    </div>
+    <ul>
+      <li><a href="/en/faby/">Faby</a></li>
+      <li><a href="/en/sorula/">Sorula</a></li>
+      <li><a href="/en/about/">About</a></li>
+      <li><a href="/en/contact/">Contact</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.fabyfun.com" target="_blank" rel="noopener">fabyfun.com&nbsp;&#8599;</a></li>
+      <li><a href="https://sorula.app" target="_blank" rel="noopener">sorula.app&nbsp;&#8599;</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- footer:end -->
+
+</body>
+</html>

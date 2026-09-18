@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /blog/
+Disallow: /en/blog/
+
+Sitemap: https://yelkovan.ai/sitemap.xml

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Tek ekiple iki uygulama — Yelkovan</title>
+<meta name="description" content="İki farklı ürünü aynı küçük ekiple yürütürken Flutter ve Firebase seçimlerinin neyi kolaylaştırdığı, neyi zorlaştırdığı.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/assets/brand/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/brand/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+</head>
+<body>
+
+<a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+<!-- nav:start v1 -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/">
+      <img src="/assets/brand/logo.svg" alt="" width="30" height="30">
+      <span>Yelkovan</span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="/faby/">Faby</a>
+      <a href="/sorula/">Sorula</a>
+      <a href="/hakkimizda/">Hakkımızda</a>
+      <a href="/iletisim/">İletişim</a>
+      <a class="nav__lang" href="/en/blog/one-team-two-apps/" hreflang="en" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+<!-- nav:end -->
+
+<main id="icerik">
+
+  <article>
+    <section id="hero" class="hero">
+      <div class="container stack--lg stack">
+        <h1>Tek ekiple iki uygulama</h1>
+        <p class="page-meta">
+          <span><time datetime="2026-09-19">19 Eylül 2026</time></span><span>Yelkovan</span><span>5 dakika</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="govde" class="section">
+      <div class="container stack--lg stack">
+        <p>Elimizde iki ürün var ve birbirlerine hiç benzemiyorlar. Faby dört yaşındaki bir çocuğa masal okuyor; Sorula on yedi yaşındaki bir öğrencinin deneme sınavını analiz ediyor. Buna rağmen ikisi de aynı teknik temelin üzerinde duruyor: Flutter ve Firebase. Bunun nedeni teknolojilerin "en iyi" olması değil — küçük bir ekibin iki ürünü aynı anda ayakta tutabilmesi için tek bir zihinsel model gerekiyor olması.</p>
+
+        <h2>Tek kod tabanı ne kazandırıyor</h2>
+        <p>Flutter'ın pratikteki asıl faydası "bir kez yaz, her yerde çalıştır" sloganı değil. Asıl fayda şu: bir hatayı düzelttiğinizde iki platformda birden düzeltmiş oluyorsunuz, ve iki platformun davranışının neden farklılaştığını araştırmak zorunda kalmıyorsunuz. Küçük ekipte zaman, yeni özellik yazmaktan çok "neden burada böyle davranıyor" sorusuna gidiyor. O soruyu ikiye katlamamak ciddi bir kazanç.</p>
+
+        <h2>Nerede bedel ödüyoruz</h2>
+        <p>Platforma özgü bir şey yapmanız gerektiği anda bedel başlıyor. Faby'de ebeveynin kendi sesini tanıtması, Sorula'da kamerayla soru okuma — ikisi de yerel katmana iniyor ve orada Flutter size yardım etmiyor, sadece yoldan çekiliyor. Bu işler tahmin ettiğinizden uzun sürüyor. Plan yaparken bu kalemleri ayrı düşünmek gerekiyor.</p>
+
+        <h2>Yapay zekâ tarafında öğrendiğimiz şey</h2>
+        <p>İki üründe de modelleri biz eğitmiyoruz; hazır modelleri kullanıyoruz. İşin zor kısmı model seçmek değil, modelin ne zaman <em>kullanılmayacağına</em> karar vermek. Sorula'da bir öğrenci matematik sorusunu kameraya tuttuğunda cevabın doğru olması yetmiyor; çözümün öğrencinin takip edebileceği adımlara bölünmüş olması gerekiyor. Faby'de üretilen masalın güzel olması yetmiyor; yaş grubuna uygun olması ve aynı karakterin her sayfada aynı görünmesi gerekiyor.</p>
+        <p>Bu kısıtların hiçbiri model kalitesiyle çözülmüyor. Ürün tarafında çözülüyor — ne soracağınızı, sonucu nasıl göstereceğinizi ve neyi hiç göstermeyeceğinizi tasarlayarak.</p>
+
+        <h2>Özet</h2>
+        <p>Küçük ekip için doğru soru "hangi teknoloji en iyi" değil, "hangi teknoloji beni en az yerde şaşırtır". İki ürünü aynı temelde tutmak, öğrendiğimiz her şeyi ikisinde birden kullanabilmemizi sağlıyor. Ödediğimiz bedel, platforma özgü işlerde yavaşlamak. Şimdilik bu takas bize mantıklı geliyor.</p>
+      </div>
+    </section>
+
+    <section id="alt" class="section section--tint">
+      <div class="container stack">
+        <p><a href="/blog/">&larr; Tüm yazılar</a></p>
+      </div>
+    </section>
+  </article>
+
+</main>
+
+<!-- footer:start v1 -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <p>&copy; 2026 Yelkovan</p>
+      <p><a href="/gizlilik/">Gizlilik</a></p>
+    </div>
+    <ul>
+      <li><a href="/faby/">Faby</a></li>
+      <li><a href="/sorula/">Sorula</a></li>
+      <li><a href="/hakkimizda/">Hakkımızda</a></li>
+      <li><a href="/iletisim/">İletişim</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.fabyfun.com" target="_blank" rel="noopener">fabyfun.com&nbsp;&#8599;</a></li>
+      <li><a href="https://sorula.app" target="_blank" rel="noopener">sorula.app&nbsp;&#8599;</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- footer:end -->
+
+</body>
+</html>
