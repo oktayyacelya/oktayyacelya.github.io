@@ -1,0 +1,8 @@
+/* main.css — HTML'in bağlandığı TEK stil dosyası.
+   Yeni bir CSS dosyası eklemek istersen buraya bir satır yaz;
+   16 HTML dosyasını tek tek açman gerekmez. */
+
+@import "tokens.css";      /* değerler: renk, yazı, boşluk */
+@import "base.css";        /* tarayıcı düzeltmeleri + temel etiketler */
+@import "layout.css";      /* yerleşim: .container .section .grid .stack */
+@import "components.css";  /* parçalar: .site-header .card .btn .site-footer */

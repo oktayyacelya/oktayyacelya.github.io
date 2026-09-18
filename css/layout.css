@@ -1,0 +1,38 @@
+/* layout.css — sayfadaki şeylerin nereye yerleşeceği.
+   Buradaki sınıflar renk veya yazı tipi belirlemez, sadece yerleşim yapar. */
+
+/* İçeriği ortalar ve kenarlardan nefes payı bırakır. */
+.container {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--s5);
+}
+
+/* Bölümler arası dikey boşluk. */
+.section { padding-block: var(--s8); }
+.section--lg { padding-block: var(--s9); }
+.section--tint { background: var(--ivory-2); }
+
+/* Alt alta dizilen öğeler arasına eşit boşluk koyar.
+   Her öğeye tek tek margin yazmaktan çok daha temiz. */
+.stack > * + * { margin-top: var(--s4); }
+.stack--lg > * + * { margin-top: var(--s6); }
+.stack--sm > * + * { margin-top: var(--s2); }
+
+/* Sitenin en çok işe yarayan tek satırı:
+   telefonda alt alta, geniş ekranda yan yana — medya sorgusu olmadan.
+   minmax(min(100%, 20rem), 1fr) = "en az 20rem ver, ama ekran dardır 20rem
+   sığmıyorsa tam genişlik ver". Böylece dar ekranda taşma olmaz. */
+.grid {
+  display: grid;
+  gap: var(--s5);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+.grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+
+/* Bölüm başlığı + açıklama bloğu. */
+.section-head { max-width: var(--measure); margin-bottom: var(--s6); }
+.section-head p { color: var(--ink-2); margin-top: var(--s3); }

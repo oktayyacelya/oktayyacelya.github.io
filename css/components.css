@@ -1,0 +1,170 @@
+/* components.css — sayfadaki tekrar eden parçalar. */
+
+/* ---------- Üst menü ----------
+   JavaScript yok. Dar ekranda hamburger menü açmak yerine linkler
+   alt satıra kayar — 4 link için en basit ve en sağlam çözüm. */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--ivory);
+}
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3) var(--s5);
+  padding-block: var(--s4);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  text-decoration: none;
+  color: var(--ink);
+  margin-right: auto;
+}
+.brand img { width: 30px; height: 30px; }
+.brand span {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  letter-spacing: 0.02em;
+}
+
+/* Dar ekranda linkler sığsın diye boşluk küçük başlar,
+   geniş ekranda açılır. "Mobil öncelikli" tam olarak bu demek:
+   önce dar ekran için yaz, sonra min-width ile ekle. */
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s4); }
+
+@media (min-width: 48em) {
+  .nav { gap: var(--s5); }
+}
+.nav a {
+  color: var(--ink-2);
+  text-decoration: none;
+  font-size: var(--step--1);
+}
+.nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+.nav a[aria-current="page"] { color: var(--ink); }
+
+.nav__lang {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--s1) var(--s3);
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Butonlar ---------- */
+.btn {
+  display: inline-block;
+  padding: var(--s3) var(--s5);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: var(--step--1);
+  border: 1px solid transparent;
+}
+.btn--primary { background: var(--clay); color: var(--ivory); }
+.btn--primary:hover { background: #9C4726; }
+.btn--ghost { border-color: var(--line); color: var(--ink); }
+.btn--ghost:hover { border-color: var(--ink-2); }
+
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--s3); }
+
+/* ---------- Hero ---------- */
+.hero { padding-block: var(--s9) var(--s8); }
+.hero__lead {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  line-height: 1.4;
+  color: var(--ink);
+  max-width: 30ch;
+}
+.hero__sub { color: var(--ink-2); }
+
+/* ---------- Ürün kartları ----------
+   --accent burada yerel olarak eziliyor. Yani ürün rengi sadece
+   kartın içinde geçerli; sitenin geri kalanına sızmıyor. */
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s6);
+  background: var(--ivory);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+.card--faby   { --accent: var(--faby); }
+.card--sorula { --accent: var(--sorula); }
+
+.card__icon {
+  width: 56px; height: 56px;
+  border-radius: 13px;
+  border: 1px solid var(--line);
+}
+.card__title {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  color: var(--accent);
+}
+.card__text { color: var(--ink-2); flex-grow: 1; }
+.card__links { display: flex; flex-wrap: wrap; gap: var(--s4); font-size: var(--step--1); }
+.card__links a { color: var(--accent); }
+
+/* Kartın üstünde ince bir renk şeridi — ürünü rengiyle işaretler. */
+.card::before {
+  content: "";
+  display: block;
+  width: 36px; height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+/* ---------- Madde listeleri ---------- */
+.feature h3 { margin-bottom: var(--s2); }
+.feature p { color: var(--ink-2); font-size: var(--step--1); }
+
+/* ---------- Doğrulanabilir bilgi satırları ---------- */
+.facts { list-style: none; padding: 0; }
+.facts li {
+  padding-block: var(--s4);
+  border-top: 1px solid var(--line);
+  color: var(--ink-2);
+  max-width: none;
+}
+.facts li:last-child { border-bottom: 1px solid var(--line); }
+.facts strong { color: var(--ink); font-weight: 500; }
+
+/* ---------- Rozet ---------- */
+.badge {
+  display: inline-block;
+  font-size: var(--step--1);
+  padding: var(--s1) var(--s3);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-2);
+  background: var(--clay-soft);
+}
+
+/* ---------- İletişim şeridi ---------- */
+.contact-strip { text-align: center; }
+.contact-strip a {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+}
+.contact-strip p { margin-inline: auto; }
+
+/* ---------- Alt bilgi ---------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding-block: var(--s7);
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s5);
+  justify-content: space-between;
+}
+.site-footer a { color: var(--ink-2); }
+.site-footer ul { list-style: none; padding: 0; }
+.site-footer li { margin-bottom: var(--s2); }

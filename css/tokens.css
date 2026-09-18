@@ -1,0 +1,55 @@
+/* tokens.css — Yelkovan tasarım değerleri.
+   Sitenin görünümüyle ilgili değiştirmek isteyeceğin her şey bu dosyada.
+   Buradaki bir değeri değiştirdiğinde tüm sayfalar birden değişir. */
+
+:root {
+  /* --- Renkler --- */
+  --ivory:      #FBF9F4;  /* sayfa zemini — sıcak kırık beyaz */
+  --ivory-2:    #F4F0E7;  /* vurgulu şerit zemini */
+  --ink:        #1F1D1A;  /* ana metin */
+  --ink-2:      #55504A;  /* ikincil metin */
+  --line:       #E4DED1;  /* çizgiler ve kenarlıklar */
+  --clay:       #B4552F;  /* marka vurgusu */
+  --clay-soft:  #F0E1D9;  /* vurgunun açık tonu */
+
+  /* Bileşenlerin kullandığı vurgu. Kartlar bunu kendi içinde ezer. */
+  --accent: var(--clay);
+
+  /* Ürün renkleri — SADECE ilgili kartın içinde kullanılır.
+     Şirket sitesi hiçbir uygulamanın paletini benimsemez. */
+  --faby:   #7A5BD6;
+  --sorula: #1F7A6B;
+
+  /* --- Yazı --- */
+  /* Sistemde hazır fontlar: hiçbir şey indirilmez, site anında açılır,
+     ve Türkçe karakterleri (ş ğ ı İ ç ö ü) doğru basarlar. */
+  --font-serif: "Iowan Old Style", "Palatino", Georgia, "Times New Roman", serif;
+  --font-sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Tip ölçeği — 1.25 katsayılı. En büyük ikisi ekrana göre esner. */
+  --step--1: 0.875rem;
+  --step-0:  1.0625rem;
+  --step-1:  1.3rem;
+  --step-2:  1.6rem;
+  --step-3:  clamp(1.9rem, 1.5rem + 1.6vw, 2.4rem);
+  --step-4:  clamp(2.4rem, 1.8rem + 2.8vw, 3.4rem);
+
+  --measure: 34rem;   /* rahat okunan satır uzunluğu */
+  --wrap:    68rem;   /* sayfa içeriğinin azami genişliği */
+
+  /* --- Boşluklar — 4px tabanlı --- */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4rem;
+  --s9: 6rem;
+
+  /* --- Diğer --- */
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgb(31 29 26 / 0.05), 0 8px 24px rgb(31 29 26 / 0.06);
+}

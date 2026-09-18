@@ -3,12 +3,148 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yelkovan</title>
-<meta name="description" content="Yelkovan — mobil uygulama stüdyosu. Site yapım aşamasında.">
+<meta name="color-scheme" content="light">
+<title>Yelkovan — Mobil uygulama stüdyosu</title>
+<meta name="description" content="Yelkovan, öğrenmeyi ve hayal kurmayı kolaylaştıran mobil uygulamalar geliştiren bağımsız bir stüdyo. Faby ve Sorula uygulamalarının arkasındaki ekip.">
 <meta name="robots" content="noindex">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/assets/brand/logo.svg" type="image/svg+xml">
 </head>
 <body>
-<h1>Yelkovan</h1>
-<p>Sitemiz yapım aşamasında.</p>
+
+<a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+<!-- nav:start v1 -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/">
+      <img src="/assets/brand/logo.svg" alt="" width="30" height="30">
+      <span>Yelkovan</span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="/faby/">Faby</a>
+      <a href="/sorula/">Sorula</a>
+      <a href="/hakkimizda/">Hakkımızda</a>
+      <a href="/iletisim/">İletişim</a>
+      <a class="nav__lang" href="/en/" hreflang="en" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+<!-- nav:end -->
+
+<main id="icerik">
+
+  <section id="hero" class="hero">
+    <div class="container stack--lg stack">
+      <h1>Yelkovan</h1>
+      <p class="hero__lead">Öğrenmeyi ve hayal kurmayı kolaylaştıran mobil uygulamalar geliştiriyoruz.</p>
+      <p class="hero__sub">Bağımsız, küçük bir yazılım stüdyosuyuz. İki uygulamamız App Store ve Google Play'de yayında.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#urunler">Ürünlerimiz</a>
+        <a class="btn btn--ghost" href="/iletisim/">İletişim</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="urunler" class="section section--tint">
+    <div class="container">
+      <div class="section-head">
+        <h2>Ürünlerimiz</h2>
+        <p>İkisi de yayında, ikisi de aktif olarak geliştiriliyor.</p>
+      </div>
+      <div class="grid">
+
+        <article class="card card--faby">
+          <h3 class="card__title">Faby</h3>
+          <p class="card__text">Çocukların kendi masallarının kahramanı olduğu, yapay zekâ destekli hikâye uygulaması. 2–12 yaş için, yedi dilde. Reklamsız.</p>
+          <p class="card__links">
+            <a href="/faby/">Faby hakkında</a>
+            <a href="https://www.fabyfun.com" target="_blank" rel="noopener">fabyfun.com&nbsp;&#8599;</a>
+          </p>
+        </article>
+
+        <article class="card card--sorula">
+          <h3 class="card__title">Sorula</h3>
+          <p class="card__text">Yapay zekâ destekli sınav hazırlık uygulaması. TYT'den KPSS'ye, LGS'den IELTS'e kadar 19 sınav takibi tek yerde.</p>
+          <p class="card__links">
+            <a href="/sorula/">Sorula hakkında</a>
+            <a href="https://sorula.app" target="_blank" rel="noopener">sorula.app&nbsp;&#8599;</a>
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="yaklasim" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Nasıl çalışıyoruz</h2>
+      </div>
+      <div class="grid grid--3">
+
+        <div class="feature">
+          <h3>Küçük ekip, uçtan uca</h3>
+          <p>Tasarımdan yayına kadar her şeyi kendimiz yapıyoruz. Flutter ve Firebase ile tek kod tabanından hem iOS hem Android.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Reklamsız, takipsiz</h3>
+          <p>Uygulamalarımızda üçüncü taraf analiz araçları kullanmıyoruz. Faby'de hiç reklam yok — çocuklara yönelik bir üründe bu bizim için pazarlık konusu değil.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Yapay zekâyı ürüne dönüştürüyoruz</h3>
+          <p>Kendi temel modellerimizi eğitmiyoruz. Anthropic ve OpenAI'ın modellerini alıp günlük hayatta gerçekten işe yarayan deneyimlere çeviriyoruz.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="kilometre" class="section section--tint">
+    <div class="container">
+      <div class="section-head">
+        <h2>Kısa kısa</h2>
+      </div>
+      <ul class="facts">
+        <li><strong>İki uygulama yayında</strong> — Faby ve Sorula, App Store ve Google Play'de.</li>
+        <li><strong>İTÜ Çekirdek</strong> — Sorula, İTÜ Çekirdek hızlandırma programında yer aldı.</li>
+        <li><strong>Yedi dil</strong> — Faby Türkçe, İngilizce, Fransızca, İspanyolca, Arapça, Çince ve Hintçe destekliyor.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="iletisim-serit" class="section">
+    <div class="container contact-strip stack">
+      <h2>Bize yazın</h2>
+      <p>İş birliği ve basın talepleri için:</p>
+      <p><a href="mailto:merhaba@yelkovan.ai">merhaba@yelkovan.ai</a></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- footer:start v1 -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <p>&copy; 2026 Yelkovan</p>
+      <p><a href="/gizlilik/">Gizlilik</a></p>
+    </div>
+    <ul>
+      <li><a href="/faby/">Faby</a></li>
+      <li><a href="/sorula/">Sorula</a></li>
+      <li><a href="/hakkimizda/">Hakkımızda</a></li>
+      <li><a href="/iletisim/">İletişim</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.fabyfun.com" target="_blank" rel="noopener">fabyfun.com&nbsp;&#8599;</a></li>
+      <li><a href="https://sorula.app" target="_blank" rel="noopener">sorula.app&nbsp;&#8599;</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- footer:end -->
+
 </body>
 </html>
